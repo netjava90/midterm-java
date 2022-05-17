@@ -341,7 +341,7 @@ During the garbage collection objects that are no longer used are cleared, thus 
 
 
 
-Can you guarantee that you wont run out of memory using the garbage collection process?
+Can you guarantee the garbage collection process?
 No, Garbage collection does not guarantee that a program will not run out of memory.
 
 

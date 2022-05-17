@@ -1,34 +1,200 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
+A.We need to store retrieve multiple data and multiple data types.
+it can also allow us to manage large amount of data such as large databases.
+
 
 
 What are the various operations that can be performed on different Data Structures?
+Add, retrieve, remove, retrieve, create, search, insert.
+
 List out the areas in which data structures are applied extensively?
+we use it in Databases, machine learning, operating system, data science.
+
 what is an Array?
+is a non primitive variable. a place holder or object where we can store multiple variables.
+
 what is the difference between the Array and ArrayList?
+1-Array is static and has to be predefined
+  ArrayList is dynamic  grow dynamically based on need.
+2-Array contain only non primitive data type
+  ArrayList can contain primitive and non primitive data type
+3-ArrayList has a set of methods to access its elements.
+  Array element's can be accessed  by using an index [],
+
+
 what is LinkedList?
+Linked List are linear data structures where the elements stored in nodes (instead of blocks)
+with address and pointers.the first address is the head and the last one is considered as a tail.
+
+
 How is an Array different from Linked List?
+1-An array is a collection of elements defined in block with index only.
+  A linked list is a collection of objects known as a nodes.
+2-Array elements store in blocks.
+  Linked list elements can be stored randomly in nodes.
+3-Array works with a static memory.
+  The Linked list works with dynamic memory.
+4-Array elements are independent of each other.
+  Linked list elements are dependent on each other.
+5-Array takes more time while performing any operation like insertion, deletion, etc.
+  Linked list takes less time while performing any operation like insertion, deletion, etc.
+
+
 what is queue?
+Is a collection that uses FIFO to store and retrieve data.
+
+
 what is stack?
+Is a collection that uses FILO to store and retrieve data.
+it is under list interface.
+
+
 what is FIFO and LIFO?
+FIFO: Stands for "First In First Out",it is a method in which items are processed in the order they have been entered.
+LIFO: Stands for "Last In First Out",it is a method for handling data structures where the first element is processed last
+
+
 what is the order of complexity?
+Order of complexity is a measure of how long an algorithm would take to complete given an input of size n.
+Generally, the smaller the order of complexity of the program's underlying algorithm, the faster
+it will run and the better it will scale as the input gets larger. Thus, we should often seek more efficient
+
+
 what is the best case to search an element from an array?
+Sequential search using map is the best that we can do when trying to search for a value.
+
+
 what is the worst case to search an element from an array?
+For an unsorted array, we have to search element by element, until the element is found or array is completely searched.
+
+
 what is tree in data structure?
+A non-linear data structure where each element is linked to two child element.
+
+
 what is graph in data structure?
+A non-linear data structure where one element can be linked to multiple elements.
+
+
 what is the difference between the HashTable and HashMap?
+HasTable: accepts synchronization
+          null is not allowed
+
+HashMap: does not accept synchronization
+        nul is allowed
+
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+RDBMS : Arrays.
+Network data model : Graph.
+Hierarchical data model : Tree.
+
+
 How HashMap works in java?
+HashMap implements MAP interface and works on the principle of Hashing.
+Objects are stored by calling (key, value) method of HashMap and retrieved by calling get(key) method.
+
+
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+it is thrown to indicate that we are trying to access array element with an illegal (non existing index) index.
+This exception is thrown when the index is either less or greater than or equal to the size of the array.
+
 What are the different ways of copying an array into another array?
+first Create a new array of the same length as the original array and copy each element(with the help of for loop).
+second use System array copy or Array clone
+
+
 What is difference between an array and a linked list?
+1-An array is a collection of elements defined in block with indexes.
+  A linked list is a collection that uses nodes where node consists of two parts,data and address.
+2-Array elements store in a contiguous memory location.
+  Linked list elements can be stored anywhere in the memory or randomly stored.
+3-Array works with a static memory.
+  The Linked list works with dynamic memory.
+4-Array elements are independent of each other.
+  linked list elements are dependent on each other.
+5-Array takes more time while performing any operation like insertion, deletion, etc.
+  Linked list takes less time while performing any operation like insertion, deletion, etc.
+
+
+
 What is DFS and BFS?
+-DFS stands (for Depth First Search) is a edge based technique. It uses the Stack data structure, performs two stages.
+first visited vertices are pushed into stack.
+second if there is no vertices then visited vertices are popped.
+
+-BFS stands for (Breadth First Search) is a vertex based technique for finding a shortest path in graph. It uses a Queue
+data structure which follows first in first out.
+
+
 What is Recursion?
+a recursion happens when a method call itself.
+
+
+
 What are linear and non linear data Structures?
+Linear Data Structures: The data structure where data elements are organized sequentially or linearly and they are
+attached one after another.
+examples:
+Linear: array list, linked list, set, map. Queue, stack.
+
+Non Linear Data Structures: The data structure where data elements are not organized sequentially.
+examples:
+Non-linear: tree and graph
+
+
 What is Big-(O)-notation?
+Big O notation is used in Computer Science to describe the performance or complexity of an algorithm.
+
+
 Outlined different kind of sorting algorithm with time complexity?
+     1- Bubble sort:
+ It is a comparison algorithm. It works by repeatedly stepping through the list to be sorted, comparing each
+ pair of adjacent items and swapping them if they are in the wrong order. The pass through the list is repeated until no
+ swaps are needed, which indicates that the list is sorted.
+ Worst case performance: O(n2)
+ Best case performance: O(n)
+ Average case performance: O(n2)
+ Worst case space complexity: O(n) total, O(1) auxiliary
+ Bubble sort is not a practical sorting algorithm when n is large.
+
+      2.Selection sort:
+ It is an in-place comparison sort.Selection sort is noted for its simplicity, and also has performance
+ advantages over more complicated algorithms in certain situations.
+ Worst case performance: O(n2)
+ Best case performance: O(n2)
+ Average case performance: O(n2)
+ Worst case space complexity: O(n) total, O(1) auxiliary
+
+      3.Insertion sort:
+ It is a comparison sort in which the sorted array (or list) is built one entry at a time. It is much
+ less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
+ Worst case performance: O(n2)
+ Best case performance: O(n)
+ Average case performance: O(n2)
+ Worst case space complexity: O(n) total, O(1) auxiliary
+
+      4. Merge sort:
+ It is an O(n log n) comparison-based sorting algorithm.
+ Worst case performance: O(n log n)
+ Best case performance: O(n log n) typical
+ Average case performance: O(n log n)
+ Worst case space complexity: O(n) total, O(n) auxiliary
+
+      5.Quick sort:
+ It is similar to merge sort in many ways. It divides the elements to be sorted into two groups, sorts the
+ two groups by recursive calls, and combines the two sorted groups into a single array of sorted values.
+ The choice of a good pivot element is critical to the efficiency of the quicksort algorithm.
+ If we can ensure that the pivot element is near the median of the array values, then quicksort is very efficient.
+ Worst case performance: O(n2)
+ Best case performance: O(n log n)
+ Average case performance: O(n log n)
+
+
+
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
@@ -36,4 +202,15 @@ Draw a table with time complexity in which it will summarize all the data struct
   c)In terms of Searching element.
   d)In terms of Removing element.
 
+      ++-----------------++----------++------------++------------++-----------++
+      ||Datastructures   ||Accessing || Insertion  || Searching  || Removing  ||
+      ___________________||__________||____________||____________||___________++
+      ||Array            || 0(1)     || 0(n)       || 0(n)       || 0(n)      ||
+      ||Stack            || 0(n)     || 0(1)       || 0(n)       || 0(1)      ||
+      ||Queue            || 0(n)     || 0(1        || 0(n)       || 0(1)      ||
+      ||Singly-Linkedlist|| 0(n)     || 0(1)       || 0(n)       || 0(1)      ||
+      ||doubly-Linkedlist|| 0(n)     || 0(1)       || 0(n)       || 0(1)      ||
+      ||HashTable        || N/A      || 0(1)       || 0(1)       || 0(1)      ||
+      ||BinaryTree       || 0(log(n))|| 0(log(n))  || 0(log(n))  || 0(log(n)) ||
+      ++-----------------++----------++------------++------------++-----------++
 
