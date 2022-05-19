@@ -24,18 +24,18 @@ public class UseArrayList {
 		list.add(127);
 
 		//print the whole list
-		//System.out.println(list);
+		System.out.println(list);
 
 		//retrieve a specific element of the list
-		//System.out.println(list.get(3));
+		System.out.println(list.get(3));
 
 		//add one element to the list
 		list.add(55);
-		//System.out.println(list);
+		System.out.println(list);
 
 		//remove element from the list
 		list.remove(6);
-		//System.out.println(list);
+		System.out.println(list);
 
 		//override an existing value
 		list.set(0, 5);
