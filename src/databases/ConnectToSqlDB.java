@@ -168,7 +168,7 @@ public class ConnectToSqlDB {
                 String name = rs.getString("stName");
                 String id = rs.getString("stID");
                 String dob = rs.getString("stDOB");
-                //System.out.format("%s, %s\n", name, id);
+                System.out.format("%s, %s\n", name, id);
                 user = new User(name,id, dob);
                 list.add(user);
 
@@ -182,15 +182,15 @@ public class ConnectToSqlDB {
     }
 
     public static void main(String[] args) throws Exception {
-//        List<User> list = readUserProfileFromSqlTable();
-//        for(User user:list){
-//            System.out.println(user.getStName() + " " + user.getStID()+ " " + user.getStDOB());
-//        }
-//        ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-//        List<String> students = connectToSqlDB.readDataBase("student", "name");
-//        for (String student: students){
-//            System.out.println(student);
-//        }
+       List<User> list = readUserProfileFromSqlTable();
+        for(User user:list){
+            System.out.println(user.getStName() + " " + user.getStID()+ " " + user.getStDOB());
+       }
+        ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+       List<String> students = connectToSqlDB.readDataBase("student", "Name");
+        for (String student: students){
+            System.out.println(student);
+       }
 
 
     }

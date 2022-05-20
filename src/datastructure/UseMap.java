@@ -1,8 +1,6 @@
 package datastructure;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class UseMap {
 
@@ -49,7 +47,31 @@ public class UseMap {
 		for (Map.Entry<Integer, String> mp : PCN.entrySet()) {
 			System.out.println(mp.getKey() + " : " + mp.getValue());
 		}
-	}
 
+		System.out.println(" List/HashMap ");
+		List<String> Hospital = new LinkedList<>();
+		Hospital.add("front desk");
+		Hospital.add("waiting area");
+		Hospital.add("emergency");
+		Hospital.add("block operation");
+
+
+		List<String> House  = new LinkedList<>();
+		House.add("living room");
+		House.add("kitchen");
+		House.add("room");
+		House.add("shower");
+		House.add("garden");
+
+
+		HashMap<String, List<String>> map = new HashMap<>();
+		map.put("departments", Hospital);
+		map.put("pieces", House);
+		// Print all values
+		for (Map.Entry entry : map.entrySet()) {
+			System.out.println(entry.getKey() + " : " + entry.getValue());
+		}
+
+	}
 
 }
