@@ -30,4 +30,5 @@ public class Palindrome {
            System.out.println(str1+" Is NOT a palindrome String");
         }
     }
+
 }

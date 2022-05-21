@@ -11,7 +11,7 @@ public class Pattern {
 		Pattern.pattern();
 	}
 
-		public static void pattern(){
+		public static int pattern(){
 			int i;
 			//String sub = "";
 			for(i = 100; i >= 0; i--) {
@@ -29,5 +29,6 @@ public class Pattern {
 				//sub = ",";
 			}
 
-		}
+            return i;
+        }
 }

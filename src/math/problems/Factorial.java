@@ -13,7 +13,8 @@ public class Factorial {
     public static int factorial(int n){
         if(n==1) {
             return 1;
-        } else {// use the recurrence relation
+            // use the recurrence relation
+        } else {
             return n * factorial(n-1);
         }
     }
